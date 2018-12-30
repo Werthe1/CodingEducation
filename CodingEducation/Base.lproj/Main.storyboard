@@ -77,11 +77,11 @@
             </objects>
             <point key="canvasLocation" x="-44" y="289"/>
         </scene>
-        <!--Item 1-->
+        <!--내 질문-->
         <scene sceneID="qZY-92-tez">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OoN-HP-vlR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="XhN-jQ-ywl"/>
+                    <tabBarItem key="tabBarItem" title="내 질문" image="defaultQ" id="XhN-jQ-ywl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="THt-Ix-KnE">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -100,7 +100,7 @@
         <scene sceneID="JUB-eq-o2C">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BEA-P5-Zed" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 3" id="hRJ-iW-2Xu"/>
+                    <tabBarItem key="tabBarItem" title="Item 3" image="defaultA" id="hRJ-iW-2Xu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bwU-tE-CI7">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -119,7 +119,7 @@
         <scene sceneID="f9I-Bh-S0X">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cSu-j8-Zzc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="kZA-wv-fqU"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="defaultHome" id="kZA-wv-fqU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f0n-cA-o2s">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -135,4 +135,9 @@
             <point key="canvasLocation" x="-44" y="1002.5487256371815"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultA" width="48" height="48"/>
+        <image name="defaultHome" width="48" height="48"/>
+        <image name="defaultQ" width="48" height="48"/>
+    </resources>
 </document>
