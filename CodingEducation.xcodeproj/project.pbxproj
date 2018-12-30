@@ -60,6 +60,7 @@
 		351D767721CFAAD8000FD835 /* CodingEducation */ = {
 			isa = PBXGroup;
 			children = (
+				3544796921D9349800FF7022 /* View */,
 				3544796721D91F1800FF7022 /* Controller */,
 				351D767821CFAAD8000FD835 /* AppDelegate.swift */,
 				351D768A21CFAE21000FD835 /* TabBarViewController.swift */,
@@ -79,6 +80,13 @@
 				3544796121D91F0600FF7022 /* HomeViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		3544796921D9349800FF7022 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
