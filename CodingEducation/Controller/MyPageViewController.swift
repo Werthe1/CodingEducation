@@ -31,7 +31,6 @@ extension MyPageViewController: UITableViewDataSource, UITableViewDelegate {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! MyPageTableViewCell
             return cell
-
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath) as! MyPageTableViewCell
             switch indexPath.row {
@@ -47,6 +46,5 @@ extension MyPageViewController: UITableViewDataSource, UITableViewDelegate {
             return cell
         }
     }
-    
     
 }

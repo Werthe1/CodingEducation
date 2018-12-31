@@ -25,7 +25,12 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         
         defaultNavi()
-        
+        tableView.register(UINib(nibName:"QListTableViewCell",bundle: nil), forCellReuseIdentifier: "QCell")
+
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        btn.removeFromSuperview()
     }
     
     @objc func myPageClick() {
@@ -33,7 +38,6 @@ class HomeViewController: UIViewController {
     }
     
     @objc func writeClick() {
-        btn.removeFromSuperview()
         self.performSegue(withIdentifier: "Write", sender: self)
     }
     
@@ -43,8 +47,8 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = "hello"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "QCell", for: indexPath) as! QListTableViewCell
+        
         return cell
     }
 

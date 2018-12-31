@@ -19,7 +19,6 @@ class QViewController: UIViewController {
         
         defaultNavi()
     }
-    
 
 }
 

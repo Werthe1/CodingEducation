@@ -254,6 +254,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="OoN-HP-vlR" kind="relationship" relationship="viewControllers" id="1tg-nB-ZIU"/>
@@ -282,7 +283,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VAq-Fp-9h8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-956" y="1003"/>
+            <point key="canvasLocation" x="-865" y="1113"/>
         </scene>
         <!--내 답변-->
         <scene sceneID="JUB-eq-o2C">
@@ -301,7 +302,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XD7-cq-Qmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="876" y="1003"/>
+            <point key="canvasLocation" x="740" y="1113"/>
         </scene>
         <!--홈-->
         <scene sceneID="f9I-Bh-S0X">
@@ -320,7 +321,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z9W-8o-gYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-44" y="1002.5487256371815"/>
+            <point key="canvasLocation" x="-44" y="1114"/>
         </scene>
     </scenes>
     <resources>
