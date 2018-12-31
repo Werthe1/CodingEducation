@@ -15,6 +15,8 @@
 		3544796221D91F0600FF7022 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3544796121D91F0600FF7022 /* HomeViewController.swift */; };
 		3544796421D91F1000FF7022 /* QViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3544796321D91F1000FF7022 /* QViewController.swift */; };
 		3544796621D91F1500FF7022 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3544796521D91F1500FF7022 /* AViewController.swift */; };
+		358B89B321DA06CE00B3DDEC /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B89B221DA06CE00B3DDEC /* WriteViewController.swift */; };
+		358B89B521DA06DC00B3DDEC /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B89B421DA06DC00B3DDEC /* MyPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		3544796121D91F0600FF7022 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3544796321D91F1000FF7022 /* QViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QViewController.swift; sourceTree = "<group>"; };
 		3544796521D91F1500FF7022 /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
+		358B89B221DA06CE00B3DDEC /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		358B89B421DA06DC00B3DDEC /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 				3544796321D91F1000FF7022 /* QViewController.swift */,
 				3544796521D91F1500FF7022 /* AViewController.swift */,
 				3544796121D91F0600FF7022 /* HomeViewController.swift */,
+				358B89B221DA06CE00B3DDEC /* WriteViewController.swift */,
+				358B89B421DA06DC00B3DDEC /* MyPageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -160,7 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358B89B321DA06CE00B3DDEC /* WriteViewController.swift in Sources */,
 				3544796421D91F1000FF7022 /* QViewController.swift in Sources */,
+				358B89B521DA06DC00B3DDEC /* MyPageViewController.swift in Sources */,
 				351D768B21CFAE21000FD835 /* TabBarViewController.swift in Sources */,
 				351D767921CFAAD8000FD835 /* AppDelegate.swift in Sources */,
 				3544796221D91F0600FF7022 /* HomeViewController.swift in Sources */,

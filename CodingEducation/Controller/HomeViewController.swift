@@ -17,8 +17,14 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        let rightBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "userTab"), style: .done, target: self, action: #selector(self.myPageClick))
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem
     }
 
+    @objc func myPageClick() {
+        
+    }
+    
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
