@@ -20,9 +20,9 @@ class HomeViewController: UIViewController {
         let rightBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "userTab"), style: .done, target: self, action: #selector(self.myPageClick))
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
     }
-
+    
     @objc func myPageClick() {
-        
+        self.performSegue(withIdentifier: "myPage", sender: self)
     }
     
 }

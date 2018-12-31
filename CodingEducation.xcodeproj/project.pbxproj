@@ -17,6 +17,7 @@
 		3544796621D91F1500FF7022 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3544796521D91F1500FF7022 /* AViewController.swift */; };
 		358B89B321DA06CE00B3DDEC /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B89B221DA06CE00B3DDEC /* WriteViewController.swift */; };
 		358B89B521DA06DC00B3DDEC /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B89B421DA06DC00B3DDEC /* MyPageViewController.swift */; };
+		358B89B721DA0B9500B3DDEC /* MyPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B89B621DA0B9500B3DDEC /* MyPageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3544796521D91F1500FF7022 /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
 		358B89B221DA06CE00B3DDEC /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		358B89B421DA06DC00B3DDEC /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		358B89B621DA0B9500B3DDEC /* MyPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		3544796921D9349800FF7022 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				358B89B621DA0B9500B3DDEC /* MyPageTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			files = (
 				358B89B321DA06CE00B3DDEC /* WriteViewController.swift in Sources */,
 				3544796421D91F1000FF7022 /* QViewController.swift in Sources */,
+				358B89B721DA0B9500B3DDEC /* MyPageTableViewCell.swift in Sources */,
 				358B89B521DA06DC00B3DDEC /* MyPageViewController.swift in Sources */,
 				351D768B21CFAE21000FD835 /* TabBarViewController.swift in Sources */,
 				351D767921CFAAD8000FD835 /* AppDelegate.swift in Sources */,
