@@ -18,6 +18,8 @@ class AViewController: UIViewController {
         tableView.dataSource = self
         
         defaultNavi()
+        tableView.register(UINib(nibName:"QListTableViewCell",bundle: nil), forCellReuseIdentifier: "QCell")
+
     }
 
 }
@@ -26,12 +28,26 @@ class AViewController: UIViewController {
 
 extension AViewController: UITableViewDelegate,  UITableViewDataSource {
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "채택된 답변"
+        } else {
+            return "내가단 답변"
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "QCell", for: indexPath) as! QListTableViewCell
+        cell.titleLabel.text = "iOS는 생명주기가 어떻게 되고 Android는 어떻게 되나요?"
+        cell.typeImageView.image = UIImage(named: "letter-a")
         return cell
     }
 

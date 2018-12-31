@@ -12,6 +12,10 @@ class QListTableViewCell: UITableViewCell {
     
     var toggle = false
     
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var typeImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

@@ -12,7 +12,24 @@ class WriteViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        defaultNavi()
     }
     
+}
+
+extension WriteViewController: NaviSetting {
+    
+    func defaultNavi() {
+        self.navigationItem.title = "글쓰기"
+        naviSetting()
+    }
+    
+    func naviSetting() {
+        let rightBarButtonItem = UIBarButtonItem(title: "저장", style: .done, target: self, action: #selector(self.saveClick))
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem
+    }
+    
+    @objc func saveClick() {
+        self.performSegue(withIdentifier: "Save", sender: self)
+    }
 }
