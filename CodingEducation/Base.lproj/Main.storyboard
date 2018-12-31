@@ -87,6 +87,7 @@
                     <connections>
                         <outlet property="tableView" destination="Hcl-Ke-f9B" id="FsP-T8-uNz"/>
                         <segue destination="lTr-gQ-f6u" kind="show" identifier="myPage" id="cud-Ba-hbC"/>
+                        <segue destination="EOd-3n-gf2" kind="show" identifier="Write" id="v8j-zg-egU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jsr-1k-Acr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -106,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jn0-0Q-sWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-956" y="2419"/>
+            <point key="canvasLocation" x="-689" y="2481"/>
         </scene>
         <!--My Page View Controller-->
         <scene sceneID="ItO-VK-rv5">

@@ -20,6 +20,7 @@ class MyPageViewController: UIViewController {
 
 }
 
+//MARK: tableview datasource and delegate
 extension MyPageViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

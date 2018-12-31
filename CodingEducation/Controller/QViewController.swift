@@ -16,10 +16,14 @@ class QViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        defaultNavi()
     }
     
 
 }
+
+//MARK: tableview datasource and delegate
 
 extension QViewController: UITableViewDelegate, UITableViewDataSource {
     

@@ -12,25 +12,39 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var btn = UIButton(type: .custom)
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        floatingButton()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         
-        let rightBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "userTab"), style: .done, target: self, action: #selector(self.myPageClick))
-        self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        defaultNavi()
+        
     }
     
     @objc func myPageClick() {
         self.performSegue(withIdentifier: "myPage", sender: self)
     }
     
+    @objc func writeClick() {
+        btn.removeFromSuperview()
+        self.performSegue(withIdentifier: "Write", sender: self)
+    }
+    
 }
 
+//MARK: tableview datasource and delegate
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = "hello"
         return cell
     }
 
