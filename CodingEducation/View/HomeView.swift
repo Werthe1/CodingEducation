@@ -20,7 +20,7 @@ extension HomeViewController: NaviSetting {
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
-    func floatingButton(){
+    func floatingButton() {
         btn.frame = CGRect(x: self.view.frame.width - 90 , y: self.view.frame.height - 130, width: 64, height: 64)
         btn.backgroundColor = UIColor.black
         btn.clipsToBounds = true

@@ -18,7 +18,7 @@ class AViewController: UIViewController {
         tableView.dataSource = self
         
         defaultNavi()
-        tableView.register(UINib(nibName:"QListTableViewCell",bundle: nil), forCellReuseIdentifier: "QCell")
+        defaultView()
 
     }
 

@@ -10,7 +10,7 @@ import UIKit
 
 class QListTableViewCell: UITableViewCell {
     
-    var toggle = false
+    private var toggle = false
     
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var typeImageView: UIImageView!
@@ -26,11 +26,7 @@ class QListTableViewCell: UITableViewCell {
     }
     
     @IBAction func likeButton(_ sender: UIButton) {
-        if toggle {
-            sender.setImage(UIImage(named: "unlike"), for: .normal)
-        } else {
-            sender.setImage(UIImage.init(named: "like"), for: .normal)
-        }
+        toggle ? sender.setImage(UIImage(named: "unlike"), for: .normal) :             sender.setImage(UIImage.init(named: "like"), for: .normal)
         toggle = !toggle
     }
     

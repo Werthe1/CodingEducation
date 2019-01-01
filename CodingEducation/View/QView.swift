@@ -14,5 +14,8 @@ extension QViewController: NaviSetting {
         self.navigationItem.title = "내 답변"
     }
     
+    func defaultView() {
+        tableView.register(UINib(nibName:"QListTableViewCell",bundle: nil), forCellReuseIdentifier: "QCell")
+    }
     
 }

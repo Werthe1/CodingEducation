@@ -14,5 +14,8 @@ extension AViewController: NaviSetting {
         self.navigationItem.title = "내 질문"
     }
     
+    func defaultView() {
+        tableView.register(UINib(nibName:"QListTableViewCell",bundle: nil), forCellReuseIdentifier: "QCell")
+    }
     
 }

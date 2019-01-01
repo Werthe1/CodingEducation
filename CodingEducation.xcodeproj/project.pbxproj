@@ -25,6 +25,7 @@
 		358B89C221DA36EC00B3DDEC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B89C121DA36EC00B3DDEC /* DetailViewController.swift */; };
 		358B89C521DA38BD00B3DDEC /* QListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B89C321DA38BD00B3DDEC /* QListTableViewCell.swift */; };
 		358B89C621DA38BD00B3DDEC /* QListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358B89C421DA38BD00B3DDEC /* QListTableViewCell.xib */; };
+		35E2CADC21DB93C60012DBF5 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2CADB21DB93C60012DBF5 /* WriteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		358B89C121DA36EC00B3DDEC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		358B89C321DA38BD00B3DDEC /* QListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QListTableViewCell.swift; sourceTree = "<group>"; };
 		358B89C421DA38BD00B3DDEC /* QListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QListTableViewCell.xib; sourceTree = "<group>"; };
+		35E2CADB21DB93C60012DBF5 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				358B89BC21DA31B700B3DDEC /* AView.swift */,
 				358B89C321DA38BD00B3DDEC /* QListTableViewCell.swift */,
 				358B89C421DA38BD00B3DDEC /* QListTableViewCell.xib */,
+				35E2CADB21DB93C60012DBF5 /* WriteView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			files = (
 				358B89C221DA36EC00B3DDEC /* DetailViewController.swift in Sources */,
 				358B89B921DA10E200B3DDEC /* HomeView.swift in Sources */,
+				35E2CADC21DB93C60012DBF5 /* WriteView.swift in Sources */,
 				358B89BD21DA31B700B3DDEC /* AView.swift in Sources */,
 				358B89B321DA06CE00B3DDEC /* WriteViewController.swift in Sources */,
 				3544796421D91F1000FF7022 /* QViewController.swift in Sources */,
