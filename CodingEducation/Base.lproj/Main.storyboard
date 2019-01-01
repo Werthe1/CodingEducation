@@ -108,14 +108,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a37-NT-X2y">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="질문을 입력하세요." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a37-NT-X2y">
                                 <rect key="frame" x="8" y="234" width="359" height="368"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SNB-eQ-f4C">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SNB-eQ-f4C">
                                 <rect key="frame" x="137.5" y="118" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
@@ -124,24 +123,33 @@
                                     <constraint firstAttribute="height" constant="100" id="KQ1-et-Wza"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XtD-jC-Lua">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XtD-jC-Lua">
                                 <rect key="frame" x="267" y="118" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="M09-ym-S62"/>
                                     <constraint firstAttribute="height" constant="100" id="cud-mP-EId"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sfz-mE-D5a" appends="YES" id="1FU-3Q-B10"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1L5-8e-wgJ">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1L5-8e-wgJ">
                                 <rect key="frame" x="8" y="118" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Uqi-fF-q84"/>
                                     <constraint firstAttribute="height" constant="100" id="wCR-2U-WqU"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QlV-xa-Yvt" appends="YES" id="u7Q-v8-tMg"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="SNB-eQ-f4C" firstAttribute="centerX" secondItem="yUR-2v-Eja" secondAttribute="centerX" id="3Dl-4D-5QP"/>
                             <constraint firstItem="1L5-8e-wgJ" firstAttribute="leading" secondItem="Y4T-sx-eUR" secondAttribute="leading" constant="8" id="Gv5-iz-Gu6"/>
@@ -158,12 +166,30 @@
                             <constraint firstItem="1L5-8e-wgJ" firstAttribute="top" secondItem="C7o-Bu-oqP" secondAttribute="bottom" constant="16" id="xJ4-0j-qlr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y4T-sx-eUR"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Lsk-pN-Emz" appends="YES" id="xov-wa-CNb"/>
+                        </connections>
                     </view>
                     <connections>
                         <segue destination="GMw-kk-fOU" kind="presentation" identifier="Save" id="S2l-7z-FXm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jn0-0Q-sWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QlV-xa-Yvt">
+                    <connections>
+                        <action selector="imageTapped:" destination="EOd-3n-gf2" id="rXs-aM-1yA"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Lsk-pN-Emz">
+                    <connections>
+                        <action selector="imageTapped:" destination="EOd-3n-gf2" id="xvG-z9-BnS"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="sfz-mE-D5a">
+                    <connections>
+                        <action selector="imageTapped:" destination="EOd-3n-gf2" id="er2-4T-LUA"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-866" y="2481"/>
         </scene>

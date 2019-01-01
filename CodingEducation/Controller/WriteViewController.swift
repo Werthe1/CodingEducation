@@ -15,6 +15,10 @@ class WriteViewController: UIViewController {
         defaultNavi()
     }
     
+    @IBAction func imageTapped(_ sender: Any) {
+
+        
+    }
 }
 
 extension WriteViewController: NaviSetting {
