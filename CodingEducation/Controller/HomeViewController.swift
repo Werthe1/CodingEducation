@@ -56,4 +56,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return 3
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Detail") as! DetailViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
