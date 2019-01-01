@@ -33,10 +33,11 @@ extension AViewController: UITableViewDelegate,  UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
+        switch section {
+        case 0:
             return "채택된 답변"
-        } else {
-            return "내가단 답변"
+        default:
+            return "내가 단 답변"
         }
     }
     

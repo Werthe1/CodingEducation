@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var btn = UIButton(type: .custom)
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         floatingButton()
@@ -25,8 +25,7 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         
         defaultNavi()
-        tableView.register(UINib(nibName:"QListTableViewCell",bundle: nil), forCellReuseIdentifier: "QCell")
-
+        defaultView()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -41,6 +40,13 @@ class HomeViewController: UIViewController {
         self.performSegue(withIdentifier: "Write", sender: self)
     }
     
+}
+
+//MARK: home default view
+extension HomeViewController {
+    func defaultView() {
+        tableView.register(UINib(nibName:"QListTableViewCell",bundle: nil), forCellReuseIdentifier: "QCell")
+    }
 }
 
 //MARK: tableview datasource and delegate
