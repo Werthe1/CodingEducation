@@ -102,8 +102,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0sl-hT-dp7">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0sl-hT-dp7">
+                                <rect key="frame" x="0.0" y="443" width="375" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="M1m-gX-nSk">
@@ -116,14 +117,32 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iOS의 생명주기는 어떻게 되나요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEI-7x-kAI">
+                                <rect key="frame" x="75" y="95" width="225" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="letter-q" translatesAutoresizingMaskIntoConstraints="NO" id="qyA-ca-XEC">
+                                <rect key="frame" x="16" y="89" width="36" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MnQ-Qz-kDy">
+                                <rect key="frame" x="16" y="130" width="343" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ury-57-ZSo">
+                                <rect key="frame" x="16" y="289" width="343" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">iOS의 생명주기는 어떻게 되나요? iOS의 생명주기는 어떻게 되나요? iOS의 생명주기는 어떻게 되나요? iOS의 생명주기는 어떻게 되나요? iOS의 생명주기는 어떻게 되나요? iOS의 생명주기는 어떻게 되나요?iOS의 생명주기는 어떻게 되나요?iOS의 생명주기는 어떻게 되나요?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="0sl-hT-dp7" firstAttribute="leading" secondItem="C1h-Zv-bJd" secondAttribute="leading" id="0Oo-IC-ioV"/>
-                            <constraint firstItem="0sl-hT-dp7" firstAttribute="top" secondItem="C1h-Zv-bJd" secondAttribute="top" id="MmO-Xx-70O"/>
-                            <constraint firstItem="C1h-Zv-bJd" firstAttribute="bottom" secondItem="0sl-hT-dp7" secondAttribute="bottom" id="cod-Q4-aeK"/>
-                            <constraint firstItem="C1h-Zv-bJd" firstAttribute="trailing" secondItem="0sl-hT-dp7" secondAttribute="trailing" id="nnl-bt-Xeo"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="C1h-Zv-bJd"/>
                     </view>
                     <connections>
@@ -455,6 +474,7 @@
         <image name="defaultA" width="48" height="48"/>
         <image name="defaultHome" width="48" height="48"/>
         <image name="defaultQ" width="48" height="48"/>
+        <image name="letter-q" width="418.90908813476562" height="418.90908813476562"/>
         <image name="profile" width="42.470046997070312" height="42.470046997070312"/>
     </resources>
 </document>

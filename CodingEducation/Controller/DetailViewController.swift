@@ -12,6 +12,8 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var getData:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
