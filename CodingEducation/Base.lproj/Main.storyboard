@@ -171,6 +171,9 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="imageView1" destination="1L5-8e-wgJ" id="aj0-iS-wPv"/>
+                        <outlet property="imageView2" destination="SNB-eQ-f4C" id="n5i-lt-s3W"/>
+                        <outlet property="imageView3" destination="XtD-jC-Lua" id="7da-Pv-0zF"/>
                         <segue destination="GMw-kk-fOU" kind="presentation" identifier="Save" id="S2l-7z-FXm"/>
                     </connections>
                 </viewController>
