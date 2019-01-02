@@ -6,7 +6,7 @@
 //  Copyright © 2018 hyerikim. All rights reserved.
 //
 
-import UIKit
+import RealmSwift
 
 class WriteViewController: UIViewController {
 
@@ -18,6 +18,9 @@ class WriteViewController: UIViewController {
         createImagePicker()
     }
     
+    let realm = try! Realm()
+    var listArray: Results<CoalaModel>?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         defaultNavi()
@@ -38,7 +41,20 @@ extension WriteViewController: NaviSetting {
     }
     
     @objc func saveClick() {
+        let new = CoalaModel()
+        //뭐 저장할지 지정
+        save(coalaList: new)
         self.performSegue(withIdentifier: "Save", sender: self)
+    }
+    
+    func save(coalaList: CoalaModel) {
+        do{
+            try realm.write{
+                realm.add(coalaList)
+            }
+        } catch {
+            print("error")
+        }
     }
     
 }

@@ -6,14 +6,17 @@
 //  Copyright © 2018 hyerikim. All rights reserved.
 //
 
-import UIKit
+import RealmSwift
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
     var btn = UIButton(type: .custom)
-    
+    var listArray: Results<CoalaModel>?
+
+    let realm = try! Realm()
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         floatingButton()
