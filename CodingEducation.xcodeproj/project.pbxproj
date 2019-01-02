@@ -15,6 +15,7 @@
 		3544796221D91F0600FF7022 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3544796121D91F0600FF7022 /* HomeViewController.swift */; };
 		3544796421D91F1000FF7022 /* QViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3544796321D91F1000FF7022 /* QViewController.swift */; };
 		3544796621D91F1500FF7022 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3544796521D91F1500FF7022 /* AViewController.swift */; };
+		3546EBF021DC7CEB00036EEE /* CoalaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546EBEF21DC7CEB00036EEE /* CoalaModel.swift */; };
 		358B89B321DA06CE00B3DDEC /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B89B221DA06CE00B3DDEC /* WriteViewController.swift */; };
 		358B89B521DA06DC00B3DDEC /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B89B421DA06DC00B3DDEC /* MyPageViewController.swift */; };
 		358B89B721DA0B9500B3DDEC /* MyPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B89B621DA0B9500B3DDEC /* MyPageTableViewCell.swift */; };
@@ -40,6 +41,7 @@
 		3544796121D91F0600FF7022 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3544796321D91F1000FF7022 /* QViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QViewController.swift; sourceTree = "<group>"; };
 		3544796521D91F1500FF7022 /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
+		3546EBEF21DC7CEB00036EEE /* CoalaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoalaModel.swift; sourceTree = "<group>"; };
 		358B89B221DA06CE00B3DDEC /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		358B89B421DA06DC00B3DDEC /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		358B89B621DA0B9500B3DDEC /* MyPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewCell.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				358B89BE21DA31CC00B3DDEC /* Helper */,
+				3546EBEE21DC7CD100036EEE /* Model */,
 				3544796921D9349800FF7022 /* View */,
 				3544796721D91F1800FF7022 /* Controller */,
 				351D767821CFAAD8000FD835 /* AppDelegate.swift */,
@@ -127,6 +130,14 @@
 				35E2CADB21DB93C60012DBF5 /* WriteView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3546EBEE21DC7CD100036EEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3546EBEF21DC7CEB00036EEE /* CoalaModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		358B89BE21DA31CC00B3DDEC /* Helper */ = {
@@ -297,6 +308,7 @@
 				351D768B21CFAE21000FD835 /* TabBarViewController.swift in Sources */,
 				351D767921CFAAD8000FD835 /* AppDelegate.swift in Sources */,
 				3544796221D91F0600FF7022 /* HomeViewController.swift in Sources */,
+				3546EBF021DC7CEB00036EEE /* CoalaModel.swift in Sources */,
 				358B89BB21DA31B000B3DDEC /* QView.swift in Sources */,
 				3544796621D91F1500FF7022 /* AViewController.swift in Sources */,
 				358B89C021DA31D900B3DDEC /* Protocol.swift in Sources */,
@@ -449,7 +461,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H92U9KV5T2;
 				INFOPLIST_FILE = CodingEducation/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyeri.CodingEducation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -465,7 +480,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H92U9KV5T2;
 				INFOPLIST_FILE = CodingEducation/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyeri.CodingEducation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
