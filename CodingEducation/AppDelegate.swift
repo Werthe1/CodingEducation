@@ -6,7 +6,6 @@
 //  Copyright © 2018 hyerikim. All rights reserved.
 //
 
-import UIKit
 import RealmSwift
 
 @UIApplicationMain
