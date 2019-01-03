@@ -57,4 +57,11 @@ extension WriteViewController: NaviSetting {
         }
     }
     
+    func convertImgToData(img getImage: UIImage) -> NSData? {
+        if let data = getImage.pngData() as NSData? {
+            return data
+        }
+        return nil
+    }
+    
 }
