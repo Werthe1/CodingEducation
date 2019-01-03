@@ -56,5 +56,5 @@ extension AViewController: UITableViewDelegate,  UITableViewDataSource {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "Detail") as! DetailViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
+
 }
