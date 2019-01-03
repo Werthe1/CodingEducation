@@ -14,7 +14,6 @@ class HomeViewController: UIViewController {
     
     var btn = UIButton(type: .custom)
     var listArray: Results<CoalaModel>?
-
     let realm = try! Realm()
 
     override func viewWillAppear(_ animated: Bool) {
@@ -57,7 +56,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QCell", for: indexPath) as! QListTableViewCell
-        cell.titleLabel.layer.cornerRadius = 3
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+
+        cell.layer.borderWidth = 3
         return cell
     }
 
@@ -70,5 +71,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 //        vc.getData = "\(title) \(description)"
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
     
 }

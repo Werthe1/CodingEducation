@@ -47,8 +47,8 @@ extension AViewController: UITableViewDelegate,  UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QCell", for: indexPath) as! QListTableViewCell
+        cell.typeImageView.image = UIImage(named: "Answer")
         cell.titleLabel.text = "iOS는 생명주기가 어떻게 되고 Android는 어떻게 되나요?"
-        cell.typeImageView.image = UIImage(named: "letter-a")
         return cell
     }
 
