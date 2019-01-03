@@ -216,6 +216,9 @@
                                     <constraint firstAttribute="width" constant="100" id="HiH-Cx-Tl7"/>
                                     <constraint firstAttribute="height" constant="100" id="KQ1-et-Wza"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Lsk-pN-Emz" appends="YES" id="GOo-CT-bix"/>
+                                </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XtD-jC-Lua">
                                 <rect key="frame" x="267" y="118" width="100" height="100"/>
@@ -260,9 +263,6 @@
                             <constraint firstItem="1L5-8e-wgJ" firstAttribute="top" secondItem="C7o-Bu-oqP" secondAttribute="bottom" constant="16" id="xJ4-0j-qlr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y4T-sx-eUR"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Lsk-pN-Emz" appends="YES" id="xov-wa-CNb"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="imageView1" destination="1L5-8e-wgJ" id="aj0-iS-wPv"/>
