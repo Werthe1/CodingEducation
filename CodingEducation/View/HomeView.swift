@@ -22,9 +22,9 @@ extension HomeViewController: NaviSetting {
     
     func floatingButton() {
         btn.frame = CGRect(x: self.view.frame.width - 90 , y: self.view.frame.height - 130, width: 64, height: 64)
-        btn.backgroundColor = UIColor.black
         btn.clipsToBounds = true
         btn.layer.cornerRadius = 32
+        btn.setImage(UIImage(named: "plus"), for: .normal)
         btn.addTarget(self,action: #selector(self.writeClick), for: UIControl.Event.touchUpInside)
         if let window = UIApplication.shared.keyWindow {
             window.addSubview(btn)
