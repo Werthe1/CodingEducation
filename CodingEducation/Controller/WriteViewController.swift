@@ -35,7 +35,6 @@ extension WriteViewController: NaviSetting {
     func defaultNavi() {
         self.navigationItem.title = "글쓰기"
         naviSetting()
-        createTime()
     }
     
     func naviSetting() {
@@ -71,7 +70,6 @@ extension WriteViewController: NaviSetting {
     }
     
     func save(coalaList: CoalaModel) {
-        print(coalaList)
         do{
             try realm.write{
                 realm.add(coalaList)
