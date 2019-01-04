@@ -15,10 +15,11 @@ class HomeViewController: UIViewController {
     var btn = UIButton(type: .custom)
     var listArray: Results<CoalaModel>?
     let realm = try! Realm()
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         floatingButton()
+        loadList()
     }
     
     override func viewDidLoad() {
@@ -42,6 +43,11 @@ class HomeViewController: UIViewController {
         self.performSegue(withIdentifier: "Write", sender: self)
     }
     
+    func loadList() {
+        listArray = realm.objects(CoalaModel.self)
+        self.tableView.reloadData()
+    }
+    
 }
 
 //MARK: home default view
@@ -56,11 +62,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QCell", for: indexPath) as! QListTableViewCell
+        cell.titleLabel.text = listArray?[indexPath.row].title
+        cell.dateLabel.text = listArray?[indexPath.row].createdTime
+        
         return cell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return listArray?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

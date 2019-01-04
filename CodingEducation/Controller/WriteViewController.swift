@@ -16,13 +16,13 @@ class WriteViewController: UIViewController {
     @IBOutlet weak var imageView2: UIImageView!
     @IBOutlet weak var imageView3: UIImageView!
     
+    let realm = try! Realm()
+    var listArray: Results<CoalaModel>?
+
     @IBAction func imageTapped(_ sender: Any) {
         createImagePicker()
     }
     
-    let realm = try! Realm()
-    var listArray: Results<CoalaModel>?
-
     override func viewDidLoad() {
         super.viewDidLoad()
         defaultNavi()
@@ -71,6 +71,7 @@ extension WriteViewController: NaviSetting {
     }
     
     func save(coalaList: CoalaModel) {
+        print(coalaList)
         do{
             try realm.write{
                 realm.add(coalaList)
@@ -78,6 +79,10 @@ extension WriteViewController: NaviSetting {
         } catch {
             print("error")
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
     }
     
     func convertImgToData(img getImage: UIImage) -> NSData? {
