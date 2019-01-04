@@ -12,11 +12,10 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var getData:String?
+    var getData:CoalaModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -32,10 +31,17 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! DetailTableViewCell
+            cell.titleLabel.text = getData?.title
+            cell.descLabel.text = getData?.descript
+            if let getImage = getData?.image1 as Data? {
+                cell.qImageView.image = UIImage(data: getImage)
+            }
+            
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath)
+            
             return cell
         }
     }

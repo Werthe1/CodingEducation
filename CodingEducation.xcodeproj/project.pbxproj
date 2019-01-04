@@ -27,6 +27,7 @@
 		358B89C521DA38BD00B3DDEC /* QListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B89C321DA38BD00B3DDEC /* QListTableViewCell.swift */; };
 		358B89C621DA38BD00B3DDEC /* QListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358B89C421DA38BD00B3DDEC /* QListTableViewCell.xib */; };
 		35940C9C21DE17CB00962CC3 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35940C9B21DE17CB00962CC3 /* CommentTableViewCell.swift */; };
+		35940C9E21DF517100962CC3 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35940C9D21DF517100962CC3 /* DetailTableViewCell.swift */; };
 		35E2CADC21DB93C60012DBF5 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2CADB21DB93C60012DBF5 /* WriteView.swift */; };
 		93864E4B07227546AB38ECDF /* Pods_CodingEducation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E217B9480E9561095D92800 /* Pods_CodingEducation.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		358B89C321DA38BD00B3DDEC /* QListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QListTableViewCell.swift; sourceTree = "<group>"; };
 		358B89C421DA38BD00B3DDEC /* QListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QListTableViewCell.xib; sourceTree = "<group>"; };
 		35940C9B21DE17CB00962CC3 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		35940C9D21DF517100962CC3 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		35E2CADB21DB93C60012DBF5 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 		47922AEA7565283198A96764 /* Pods-CodingEducation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingEducation.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodingEducation/Pods-CodingEducation.release.xcconfig"; sourceTree = "<group>"; };
 		8E217B9480E9561095D92800 /* Pods_CodingEducation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodingEducation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 				358B89C421DA38BD00B3DDEC /* QListTableViewCell.xib */,
 				35E2CADB21DB93C60012DBF5 /* WriteView.swift */,
 				35940C9B21DE17CB00962CC3 /* CommentTableViewCell.swift */,
+				35940C9D21DF517100962CC3 /* DetailTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35940C9E21DF517100962CC3 /* DetailTableViewCell.swift in Sources */,
 				358B89C221DA36EC00B3DDEC /* DetailViewController.swift in Sources */,
 				358B89B921DA10E200B3DDEC /* HomeView.swift in Sources */,
 				35E2CADC21DB93C60012DBF5 /* WriteView.swift in Sources */,

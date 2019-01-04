@@ -64,7 +64,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QCell", for: indexPath) as! QListTableViewCell
         cell.titleLabel.text = listArray?[indexPath.row].title
         cell.dateLabel.text = listArray?[indexPath.row].createdTime
-        
+        cell.titleLabel.layer.cornerRadius = 5
         return cell
     }
 
@@ -74,7 +74,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "Detail") as! DetailViewController
-//        vc.getData = "\(title) \(description)"
+        vc.getData = listArray?[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

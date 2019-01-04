@@ -87,15 +87,15 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="381" id="M1m-gX-nSk">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="381" id="M1m-gX-nSk" customClass="DetailTableViewCell" customModule="CodingEducation" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="381"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M1m-gX-nSk" id="z8K-EU-F2o">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="380.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS의 생명주기는 어떻게 되나요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEI-7x-kAI">
-                                                    <rect key="frame" x="68" y="16" width="225" height="33"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="iOS의 생명주기는 어떻게 되나요?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEI-7x-kAI">
+                                                    <rect key="frame" x="68" y="16" width="284" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -108,14 +108,14 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ury-57-ZSo">
-                                                    <rect key="frame" x="16" y="223" width="343" height="149.5"/>
+                                                    <rect key="frame" x="16" y="210.5" width="343" height="162"/>
                                                     <string key="text">iOS의 생명주기는 어떻게 되나요? iOS의 생명주기는 어떻게 되나요? iOS의 생명주기는 어떻게 되나요? iOS의 생명주기는 어떻게 되나요? iOS의 생명주기는 어떻게 되나요? iOS의 생명주기는 어떻게 되나요?iOS의 생명주기는 어떻게 되나요?iOS의 생명주기는 어떻게 되나요?</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MnQ-Qz-kDy">
-                                                    <rect key="frame" x="16" y="57" width="343" height="150"/>
+                                                    <rect key="frame" x="16" y="44.5" width="343" height="150"/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="150" id="Tbd-59-dps"/>
@@ -124,11 +124,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="MnQ-Qz-kDy" firstAttribute="top" secondItem="DEI-7x-kAI" secondAttribute="bottom" constant="8" id="380-yt-xpo"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="DEI-7x-kAI" secondAttribute="trailing" constant="8" id="3zx-G2-rdN"/>
                                                 <constraint firstItem="ury-57-ZSo" firstAttribute="leading" secondItem="z8K-EU-F2o" secondAttribute="leading" constant="16" id="Bk5-Pa-ucU"/>
                                                 <constraint firstItem="DEI-7x-kAI" firstAttribute="top" secondItem="z8K-EU-F2o" secondAttribute="top" constant="16" id="VmR-YG-ctP"/>
                                                 <constraint firstItem="ury-57-ZSo" firstAttribute="top" secondItem="MnQ-Qz-kDy" secondAttribute="bottom" constant="16" id="XNI-18-P09"/>
                                                 <constraint firstItem="DEI-7x-kAI" firstAttribute="leading" secondItem="qyA-ca-XEC" secondAttribute="trailing" constant="16" id="bYr-bT-H86"/>
-                                                <constraint firstItem="DEI-7x-kAI" firstAttribute="bottom" secondItem="qyA-ca-XEC" secondAttribute="bottom" id="hIX-Lz-lyP"/>
                                                 <constraint firstItem="qyA-ca-XEC" firstAttribute="leading" secondItem="z8K-EU-F2o" secondAttribute="leading" constant="16" id="k3k-W0-lix"/>
                                                 <constraint firstItem="qyA-ca-XEC" firstAttribute="top" secondItem="z8K-EU-F2o" secondAttribute="top" constant="16" id="l1N-bi-qtO"/>
                                                 <constraint firstAttribute="trailing" secondItem="MnQ-Qz-kDy" secondAttribute="trailing" constant="16" id="sgz-3q-c7j"/>
@@ -137,6 +137,11 @@
                                                 <constraint firstAttribute="trailing" secondItem="ury-57-ZSo" secondAttribute="trailing" constant="16" id="yZE-YC-Bx6"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descLabel" destination="ury-57-ZSo" id="i4N-gj-8cj"/>
+                                            <outlet property="qImageView" destination="MnQ-Qz-kDy" id="ti1-iu-vkc"/>
+                                            <outlet property="titleLabel" destination="DEI-7x-kAI" id="cqR-Y3-ixh"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="207" id="Tix-sl-3j2">
                                         <rect key="frame" x="0.0" y="409" width="375" height="207"/>
