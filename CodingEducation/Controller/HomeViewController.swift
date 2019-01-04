@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     var btn = UIButton(type: .custom)
     var listArray: Results<CoalaModel>?
     let realm = try! Realm()
-    let cellSpacingHeight: CGFloat = 5
+    let cellSpacingHeight: CGFloat = 10
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

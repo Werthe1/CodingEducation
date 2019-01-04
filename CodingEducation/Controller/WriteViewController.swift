@@ -25,9 +25,10 @@ class WriteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        contentTextView.delegate = self
         defaultNavi()
     }
-
+    
 }
 
 extension WriteViewController: NaviSetting {
@@ -35,6 +36,8 @@ extension WriteViewController: NaviSetting {
     func defaultNavi() {
         self.navigationItem.title = "글쓰기"
         naviSetting()
+        contentTextView.text = "질문을 입력하세요."
+        contentTextView.textColor = UIColor.lightGray
     }
     
     func naviSetting() {
