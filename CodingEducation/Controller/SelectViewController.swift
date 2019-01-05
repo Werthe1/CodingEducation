@@ -16,7 +16,8 @@ class SelectViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-
+        tableView.register(UINib(nibName:"RankingTableViewCell",bundle: nil), forCellReuseIdentifier: "Cell")
+        self.navigationItem.title = "ranking🙏"
     }
     
 
@@ -25,7 +26,7 @@ class SelectViewController: UIViewController {
 extension SelectViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! RankingTableViewCell
         return cell
     }
     

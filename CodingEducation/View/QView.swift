@@ -11,7 +11,7 @@ import UIKit
 extension QViewController: NaviSetting {
     
     func defaultNavi() {
-        self.navigationItem.title = "내 답변"
+        self.navigationItem.title = "내 질문"
     }
     
     func defaultView() {

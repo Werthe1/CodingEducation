@@ -36,6 +36,10 @@ class HomeViewController: UIViewController {
         btn.removeFromSuperview()
     }
     
+    @objc func rankingClick() {
+        self.performSegue(withIdentifier: "ranking", sender: self)
+    }
+    
     @objc func myPageClick() {
         self.performSegue(withIdentifier: "myPage", sender: self)
     }

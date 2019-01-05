@@ -11,7 +11,7 @@ import UIKit
 extension AViewController: NaviSetting {
     
     func defaultNavi() {
-        self.navigationItem.title = "내 질문"
+        self.navigationItem.title = "내 답변"
     }
     
     func defaultView() {

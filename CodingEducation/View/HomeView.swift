@@ -18,6 +18,9 @@ extension HomeViewController: NaviSetting {
     func naviSetting() {
         let rightBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "userTab"), style: .done, target: self, action: #selector(self.myPageClick))
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        
+        let leftBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "trophy"), style: .done, target: self, action: #selector(self.rankingClick))
+        self.navigationItem.leftBarButtonItem = leftBarButtonItem
     }
     
     func floatingButton() {
