@@ -17,7 +17,7 @@ class SelectViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName:"RankingTableViewCell",bundle: nil), forCellReuseIdentifier: "Cell")
-        self.navigationItem.title = "ranking🙏"
+        self.navigationItem.title = "RANKING🙏"
     }
     
 

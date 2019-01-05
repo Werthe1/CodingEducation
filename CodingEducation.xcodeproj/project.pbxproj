@@ -33,6 +33,7 @@
 		35940CA421DFA00000962CC3 /* RankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35940CA221DFA00000962CC3 /* RankingTableViewCell.xib */; };
 		35C757B321E08ED300F187B4 /* AListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C757B121E08ED300F187B4 /* AListTableViewCell.swift */; };
 		35C757B421E08ED300F187B4 /* AListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35C757B221E08ED300F187B4 /* AListTableViewCell.xib */; };
+		35C757B621E0922600F187B4 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C757B521E0922600F187B4 /* ImageViewController.swift */; };
 		35E2CADC21DB93C60012DBF5 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E2CADB21DB93C60012DBF5 /* WriteView.swift */; };
 		93864E4B07227546AB38ECDF /* Pods_CodingEducation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E217B9480E9561095D92800 /* Pods_CodingEducation.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		35940CA221DFA00000962CC3 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
 		35C757B121E08ED300F187B4 /* AListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AListTableViewCell.swift; sourceTree = "<group>"; };
 		35C757B221E08ED300F187B4 /* AListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AListTableViewCell.xib; sourceTree = "<group>"; };
+		35C757B521E0922600F187B4 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		35E2CADB21DB93C60012DBF5 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 		47922AEA7565283198A96764 /* Pods-CodingEducation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingEducation.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodingEducation/Pods-CodingEducation.release.xcconfig"; sourceTree = "<group>"; };
 		8E217B9480E9561095D92800 /* Pods_CodingEducation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodingEducation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,7 @@
 				358B89B421DA06DC00B3DDEC /* MyPageViewController.swift */,
 				358B89C121DA36EC00B3DDEC /* DetailViewController.swift */,
 				35940C9F21DF56A400962CC3 /* SelectViewController.swift */,
+				35C757B521E0922600F187B4 /* ImageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				3546EBF021DC7CEB00036EEE /* CoalaModel.swift in Sources */,
 				358B89BB21DA31B000B3DDEC /* QView.swift in Sources */,
 				3544796621D91F1500FF7022 /* AViewController.swift in Sources */,
+				35C757B621E0922600F187B4 /* ImageViewController.swift in Sources */,
 				358B89C021DA31D900B3DDEC /* Protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
