@@ -21,7 +21,15 @@ class DetailViewController: UIViewController {
         tableView.register(UINib(nibName:"AListTableViewCell",bundle: nil), forCellReuseIdentifier: "ACell")
 
     }
-
+    
+    @IBAction func tapImage(_ sender: Any) {
+        let st = self.storyboard?.instantiateViewController(withIdentifier: "Image") as! ImageViewController
+        if let getImage = getData?.image1 as Data? {
+            st.myImage = UIImage(data: getImage)
+        }
+        self.navigationController?.pushViewController(st, animated: true)
+    }
+    
 }
 
 //MARK: tableview delegate and datasource
