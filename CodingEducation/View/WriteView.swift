@@ -29,5 +29,24 @@ extension WriteViewController: UIImagePickerControllerDelegate, UINavigationCont
         }
         dismiss(animated: true, completion: nil)
     }
+    
+}
 
+extension WriteViewController: UITextViewDelegate {
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if let contentColor = contentTextView.textColor {
+            if contentColor == UIColor.lightGray {
+                contentTextView.text = nil
+                contentTextView.textColor = UIColor.black
+            }
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if contentTextView.text.isEmpty {
+            contentTextView.text = "질문을 입력하세요."
+            contentTextView.textColor = UIColor.lightGray
+        }
+    }
 }

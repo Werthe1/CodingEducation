@@ -11,7 +11,11 @@ import UIKit
 extension QViewController: NaviSetting {
     
     func defaultNavi() {
-        self.navigationItem.title = "내 답변"
+        self.navigationItem.title = "MY QUESTION"
+        
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     func defaultView() {

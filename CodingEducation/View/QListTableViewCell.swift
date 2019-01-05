@@ -12,11 +12,13 @@ class QListTableViewCell: UITableViewCell {
     
     private var toggle = false
     
+    @IBOutlet weak var myView: UIView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var typeImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
     override func awakeFromNib() {
+        myView.layer.cornerRadius = 10
         super.awakeFromNib()
     }
 

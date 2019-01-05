@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="94" id="KGk-i7-Jjw" customClass="RankingTableViewCell" customModule="CodingEducation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MLe-hA-JrZ">
+                        <rect key="frame" x="16" y="16" width="288" height="61.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trophy" translatesAutoresizingMaskIntoConstraints="NO" id="OUc-x7-JOc">
+                                <rect key="frame" x="8" y="8" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Emy-XN-EfK"/>
+                                    <constraint firstAttribute="height" constant="45" id="TL3-cc-UQL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김혜리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXl-HS-0fI">
+                                <rect key="frame" x="69" y="8" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="level : 8 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuW-0q-Mct">
+                                <rect key="frame" x="130" y="8" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="채택받은 답 : 120 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fI3-SQ-OV3">
+                                <rect key="frame" x="69" y="32.5" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.3803921569" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fI3-SQ-OV3" firstAttribute="leading" secondItem="OUc-x7-JOc" secondAttribute="trailing" constant="16" id="Hks-kW-Uhi"/>
+                            <constraint firstItem="LXl-HS-0fI" firstAttribute="top" secondItem="MLe-hA-JrZ" secondAttribute="top" constant="8" id="LDz-Pr-jci"/>
+                            <constraint firstItem="VuW-0q-Mct" firstAttribute="top" secondItem="MLe-hA-JrZ" secondAttribute="top" constant="8" id="UkT-Hv-CpM"/>
+                            <constraint firstItem="VuW-0q-Mct" firstAttribute="leading" secondItem="LXl-HS-0fI" secondAttribute="trailing" constant="16" id="XV2-Dp-Lea"/>
+                            <constraint firstItem="LXl-HS-0fI" firstAttribute="leading" secondItem="OUc-x7-JOc" secondAttribute="trailing" constant="16" id="cUU-cq-SzR"/>
+                            <constraint firstItem="OUc-x7-JOc" firstAttribute="top" secondItem="MLe-hA-JrZ" secondAttribute="top" constant="8" id="f00-07-n1J"/>
+                            <constraint firstAttribute="trailing" secondItem="fI3-SQ-OV3" secondAttribute="trailing" constant="16" id="ikp-ua-Ng9"/>
+                            <constraint firstItem="OUc-x7-JOc" firstAttribute="leading" secondItem="MLe-hA-JrZ" secondAttribute="leading" constant="8" id="j1e-4P-lR5"/>
+                            <constraint firstItem="fI3-SQ-OV3" firstAttribute="top" secondItem="LXl-HS-0fI" secondAttribute="bottom" constant="3.5" id="jre-Vn-z9K"/>
+                            <constraint firstAttribute="bottom" secondItem="fI3-SQ-OV3" secondAttribute="bottom" constant="8" id="yR5-pp-0vF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="MLe-hA-JrZ" secondAttribute="trailing" constant="16" id="Rro-4Z-vlP"/>
+                    <constraint firstItem="MLe-hA-JrZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="gLR-PX-jM6"/>
+                    <constraint firstAttribute="bottom" secondItem="MLe-hA-JrZ" secondAttribute="bottom" constant="16" id="jV9-7C-qbJ"/>
+                    <constraint firstItem="MLe-hA-JrZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="n26-rO-i4V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="levelLabel" destination="VuW-0q-Mct" id="d7a-r3-yh4"/>
+                <outlet property="myView" destination="MLe-hA-JrZ" id="Q8B-j0-bIt"/>
+                <outlet property="nameLabel" destination="LXl-HS-0fI" id="Rrj-9e-950"/>
+                <outlet property="selectLabel" destination="fI3-SQ-OV3" id="Iew-eI-vNO"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="149.32533733133434"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="trophy" width="64" height="64"/>
+    </resources>
+</document>

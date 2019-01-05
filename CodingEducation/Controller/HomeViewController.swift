@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         floatingButton()
+        loadList()
     }
     
     override func viewDidLoad() {
@@ -34,12 +35,21 @@ class HomeViewController: UIViewController {
         btn.removeFromSuperview()
     }
     
+    @objc func rankingClick() {
+        self.performSegue(withIdentifier: "ranking", sender: self)
+    }
+    
     @objc func myPageClick() {
         self.performSegue(withIdentifier: "myPage", sender: self)
     }
     
     @objc func writeClick() {
         self.performSegue(withIdentifier: "Write", sender: self)
+    }
+    
+    func loadList() {
+        listArray = realm.objects(CoalaModel.self)
+        self.tableView.reloadData()
     }
     
 }
@@ -56,18 +66,20 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QCell", for: indexPath) as! QListTableViewCell
+        cell.titleLabel.text = listArray?[indexPath.row].title
+        cell.dateLabel.text = listArray?[indexPath.row].createdTime
+
         return cell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return listArray?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "Detail") as! DetailViewController
-//        vc.getData = "\(title) \(description)"
+        vc.getData = listArray?[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
+
 }
