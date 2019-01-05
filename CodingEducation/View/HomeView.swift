@@ -12,6 +12,10 @@ extension HomeViewController: NaviSetting {
     
     func defaultNavi() {
         self.navigationItem.title = "홈"
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        
         naviSetting()
     }
     

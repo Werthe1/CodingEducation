@@ -15,7 +15,6 @@ class HomeViewController: UIViewController {
     var btn = UIButton(type: .custom)
     var listArray: Results<CoalaModel>?
     let realm = try! Realm()
-    let cellSpacingHeight: CGFloat = 10
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -67,39 +66,20 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QCell", for: indexPath) as! QListTableViewCell
-        cell.titleLabel.text = listArray?[indexPath.section].title
-        cell.dateLabel.text = listArray?[indexPath.section].createdTime
-        cell.backgroundColor = UIColor.white
-        cell.layer.borderColor = UIColor.lightGray.cgColor
-        cell.layer.borderWidth = 2
-        cell.layer.cornerRadius = 8
-        cell.clipsToBounds = true
+        cell.titleLabel.text = listArray?[indexPath.row].title
+        cell.dateLabel.text = listArray?[indexPath.row].createdTime
 
         return cell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-
-    func numberOfSections(in tableView: UITableView) -> Int {
         return listArray?.count ?? 0
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "Detail") as! DetailViewController
-        vc.getData = listArray?[indexPath.section]
+        vc.getData = listArray?[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return cellSpacingHeight
-    }
-    
-    // Make the background color show through
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView()
-        headerView.backgroundColor = UIColor.clear
-        return headerView
-    }
+
 }

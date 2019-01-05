@@ -12,6 +12,10 @@ extension AViewController: NaviSetting {
     
     func defaultNavi() {
         self.navigationItem.title = "내 답변"
+        
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     func defaultView() {
