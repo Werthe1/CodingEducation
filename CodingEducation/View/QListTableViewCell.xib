@@ -20,7 +20,6 @@
                 <subviews>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIVIewController의 생명주기가 어떻게 되나요?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0y-6q-V1z">
                         <rect key="frame" x="61" y="8" width="217" height="45"/>
-                        <color key="backgroundColor" red="0.95717586799999999" green="0.95703697369999996" blue="0.96467731999999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -62,6 +61,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="0.95717586799999999" green="0.95703697369999996" blue="0.96467731999999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="s0y-6q-V1z" firstAttribute="leading" secondItem="BRS-HM-IGP" secondAttribute="trailing" constant="8" id="2HJ-7j-Zg2"/>
                     <constraint firstItem="Lzf-Xj-h1w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6gB-kc-qtE"/>

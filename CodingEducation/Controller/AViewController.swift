@@ -32,17 +32,35 @@ extension AViewController: UITableViewDelegate,  UITableViewDataSource {
         return 2
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch section {
-        case 0:
-            return "채택된 답변"
-        default:
-            return "내가 단 답변"
-        }
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 45
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let tableViewWidth = self.tableView.bounds
+        
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableViewWidth.size.width, height: tableView.sectionHeaderHeight))
+        
+        let label = UILabel()
+        label.textColor = UIColor.white
+        
+        switch section {
+        case 0:
+            label.text = "😇채택된 답변😇"
+        default:
+            label.text = "😊내가 단 답변😊"
+        }
+        
+        label.frame = headerView.frame
+        headerView.addSubview(label)
+        headerView.backgroundColor = UIColor.gray
+        
+        return headerView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
