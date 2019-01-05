@@ -11,7 +11,7 @@ import UIKit
 extension QViewController: NaviSetting {
     
     func defaultNavi() {
-        self.navigationItem.title = "내 질문"
+        self.navigationItem.title = "MY QUESTION"
         
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)

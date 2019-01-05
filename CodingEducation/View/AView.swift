@@ -11,7 +11,7 @@ import UIKit
 extension AViewController: NaviSetting {
     
     func defaultNavi() {
-        self.navigationItem.title = "내 답변"
+        self.navigationItem.title = "MY ANSWER"
         
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -55,7 +55,7 @@ extension AViewController: UITableViewDelegate,  UITableViewDataSource {
         default:
             label.text = "😊내가 단 답변😊"
         }
-        
+        label.textAlignment = .center
         label.frame = headerView.frame
         headerView.addSubview(label)
         headerView.backgroundColor = UIColor.gray

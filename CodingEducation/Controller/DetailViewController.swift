@@ -18,6 +18,8 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(UINib(nibName:"AListTableViewCell",bundle: nil), forCellReuseIdentifier: "ACell")
+
     }
 
 }
@@ -34,13 +36,14 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! DetailTableViewCell
             cell.titleLabel.text = getData?.title
             cell.descLabel.text = getData?.descript
+           
             if let getImage = getData?.image1 as Data? {
                 cell.qImageView.image = UIImage(data: getImage)
             }
             
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ACell", for: indexPath) as! AListTableViewCell
             
             return cell
         }
