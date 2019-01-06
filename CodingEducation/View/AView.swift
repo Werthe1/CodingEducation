@@ -32,9 +32,8 @@ extension AViewController: UITableViewDelegate,  UITableViewDataSource {
         return 2
     }
     
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return listArray?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

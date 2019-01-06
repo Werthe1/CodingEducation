@@ -28,10 +28,10 @@ extension HomeViewController: NaviSetting {
     }
     
     func floatingButton() {
-        btn.frame = CGRect(x: self.view.frame.width - 70 , y: self.view.frame.height - 90, width: 50, height: 50)
+        btn.frame = CGRect(x: self.view.frame.width - 70 , y: self.view.frame.height - 85, width: 50, height: 50)
         btn.clipsToBounds = true
         btn.layer.cornerRadius = 25
-        btn.setImage(UIImage(named: "add"), for: .normal)
+        btn.setImage(UIImage(named: "floating"), for: .normal)
         btn.backgroundColor = UIColor.lightGray
         btn.addTarget(self,action: #selector(self.writeClick), for: UIControl.Event.touchUpInside)
         if let window = UIApplication.shared.keyWindow {

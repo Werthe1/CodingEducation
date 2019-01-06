@@ -163,12 +163,30 @@
                                                     <rect key="frame" x="16" y="52.5" width="343" height="190"/>
                                                     <subviews>
                                                         <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MnQ-Qz-kDy">
-                                                            <rect key="frame" x="37" y="28" width="121" height="58"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <gestureRecognizers/>
                                                             <connections>
                                                                 <outletCollection property="gestureRecognizers" destination="qdB-br-0Yk" appends="YES" id="lmZ-89-odW"/>
+                                                            </connections>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ko4-13-mJO">
+                                                            <rect key="frame" x="121" y="0.0" width="100" height="100"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <gestureRecognizers/>
+                                                            <connections>
+                                                                <outletCollection property="gestureRecognizers" destination="bCg-hm-SHx" appends="YES" id="0mN-9F-8wS"/>
+                                                            </connections>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9z3-1i-dKh">
+                                                            <rect key="frame" x="243" y="0.0" width="100" height="100"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <gestureRecognizers/>
+                                                            <connections>
+                                                                <outletCollection property="gestureRecognizers" destination="mAs-RB-asa" appends="YES" id="B5l-9l-vcd"/>
                                                             </connections>
                                                         </imageView>
                                                     </subviews>
@@ -195,8 +213,10 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="descLabel" destination="ury-57-ZSo" id="i4N-gj-8cj"/>
+                                            <outlet property="eImageView" destination="9z3-1i-dKh" id="pMO-cy-hGo"/>
                                             <outlet property="qImageView" destination="MnQ-Qz-kDy" id="ti1-iu-vkc"/>
                                             <outlet property="titleLabel" destination="DEI-7x-kAI" id="cqR-Y3-ixh"/>
+                                            <outlet property="wImageView" destination="ko4-13-mJO" id="dey-ee-haq"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="207" id="Tix-sl-3j2">
@@ -251,8 +271,18 @@
                         <action selector="tapImage:" destination="aMZ-vg-Ouc" id="ePz-bq-N3B"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="bCg-hm-SHx">
+                    <connections>
+                        <action selector="tapImage:" destination="aMZ-vg-Ouc" id="aBN-O7-svB"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mAs-RB-asa">
+                    <connections>
+                        <action selector="tapImage:" destination="aMZ-vg-Ouc" id="UC7-Bc-fAl"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1562.4000000000001" y="2477.8110944527739"/>
+            <point key="canvasLocation" x="-1612" y="2481"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="g8a-In-SKZ">
@@ -300,6 +330,7 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Q 제목을 입력해주세요." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="C7o-Bu-oqP">
                                 <rect key="frame" x="8" y="80" width="359" height="22"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -308,7 +339,7 @@
                                 <rect key="frame" x="8" y="234" width="359" height="368"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SNB-eQ-f4C">
@@ -542,7 +573,7 @@
         <scene sceneID="uje-LK-GFq">
             <objects>
                 <tabBarController id="GMw-kk-fOU" customClass="TabBarViewController" customModule="CodingEducation" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wvX-RS-ANd">
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wvX-RS-ANd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -599,7 +630,7 @@
         <scene sceneID="f9I-Bh-S0X">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cSu-j8-Zzc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="홈" image="defaultHome" id="kZA-wv-fqU"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="icon" id="kZA-wv-fqU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f0n-cA-o2s">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -617,8 +648,8 @@
     </scenes>
     <resources>
         <image name="defaultA" width="48" height="48"/>
-        <image name="defaultHome" width="48" height="48"/>
         <image name="defaultQ" width="48" height="48"/>
+        <image name="icon" width="48" height="48"/>
         <image name="plus" width="40.069564819335938" height="40.069564819335938"/>
         <image name="profile" width="42.470046997070312" height="42.470046997070312"/>
         <image name="question" width="400.69564819335938" height="400.69564819335938"/>
