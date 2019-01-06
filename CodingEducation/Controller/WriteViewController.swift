@@ -41,8 +41,15 @@ extension WriteViewController: NaviSetting {
     }
     
     func naviSetting() {
+        let selectBarButtonItem = UIBarButtonItem(title: "👑", style: .done, target: self, action: #selector(self.selectClick))
         let rightBarButtonItem = UIBarButtonItem(title: "저장", style: .done, target: self, action: #selector(self.saveClick))
-        self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        self.navigationItem.rightBarButtonItems = [rightBarButtonItem,selectBarButtonItem]
+    }
+    
+    @objc func selectClick() {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "select") as! SelectViewController
+        vc.check = false
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func saveClick() {
