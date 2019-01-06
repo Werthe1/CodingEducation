@@ -34,4 +34,16 @@ extension SelectViewController: UITableViewDelegate, UITableViewDataSource {
         return 20
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let alert = UIAlertController(title: "질문을 하시겠습니까?", message: nil, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "네", style: .default, handler: {
+            action in
+            let st = self.storyboard?.instantiateViewController(withIdentifier: "Write") as! WriteViewController
+            self.navigationController?.pushViewController(st, animated: true)
+        }))
+        alert.addAction(UIAlertAction(title: "아니요", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
 }
