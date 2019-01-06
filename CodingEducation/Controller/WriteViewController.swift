@@ -114,7 +114,7 @@ extension WriteViewController: NaviSetting {
 extension WriteViewController: RankingSelectDelegate {
     
     func userInfo(name: String) {
-        
+        showToast(message: "\(name)님을 선택하셨습니다.")
     }
     
 }
