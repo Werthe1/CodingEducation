@@ -23,6 +23,7 @@ class SelectViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UINib(nibName:"RankingTableViewCell",bundle: nil), forCellReuseIdentifier: "Cell")
         self.navigationItem.title = "RANKING🙏"
+
     }
 
 }

@@ -17,6 +17,11 @@
 		3544796621D91F1500FF7022 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3544796521D91F1500FF7022 /* AViewController.swift */; };
 		3545A9D621E1E09C00BE4EAE /* Toaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545A9D521E1E09C00BE4EAE /* Toaster.swift */; };
 		3545A9D821E1F07800BE4EAE /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545A9D721E1F07800BE4EAE /* PayViewController.swift */; };
+		3545A9DA21E23CEC00BE4EAE /* WriteCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545A9D921E23CEC00BE4EAE /* WriteCommentViewController.swift */; };
+		3545A9DD21E259C900BE4EAE /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545A9DB21E259C900BE4EAE /* EmptyTableViewCell.swift */; };
+		3545A9DE21E259C900BE4EAE /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3545A9DC21E259C900BE4EAE /* EmptyTableViewCell.xib */; };
+		3545A9E121E2636700BE4EAE /* EditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545A9DF21E2636700BE4EAE /* EditTableViewCell.swift */; };
+		3545A9E221E2636700BE4EAE /* EditTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3545A9E021E2636700BE4EAE /* EditTableViewCell.xib */; };
 		3546EBF021DC7CEB00036EEE /* CoalaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546EBEF21DC7CEB00036EEE /* CoalaModel.swift */; };
 		358B89B321DA06CE00B3DDEC /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B89B221DA06CE00B3DDEC /* WriteViewController.swift */; };
 		358B89B521DA06DC00B3DDEC /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B89B421DA06DC00B3DDEC /* MyPageViewController.swift */; };
@@ -53,6 +58,11 @@
 		3544796521D91F1500FF7022 /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
 		3545A9D521E1E09C00BE4EAE /* Toaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toaster.swift; sourceTree = "<group>"; };
 		3545A9D721E1F07800BE4EAE /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		3545A9D921E23CEC00BE4EAE /* WriteCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteCommentViewController.swift; sourceTree = "<group>"; };
+		3545A9DB21E259C900BE4EAE /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
+		3545A9DC21E259C900BE4EAE /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
+		3545A9DF21E2636700BE4EAE /* EditTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTableViewCell.swift; sourceTree = "<group>"; };
+		3545A9E021E2636700BE4EAE /* EditTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditTableViewCell.xib; sourceTree = "<group>"; };
 		3546EBEF21DC7CEB00036EEE /* CoalaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoalaModel.swift; sourceTree = "<group>"; };
 		358B89B221DA06CE00B3DDEC /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		358B89B421DA06DC00B3DDEC /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +147,7 @@
 				35940C9F21DF56A400962CC3 /* SelectViewController.swift */,
 				35C757B521E0922600F187B4 /* ImageViewController.swift */,
 				3545A9D721E1F07800BE4EAE /* PayViewController.swift */,
+				3545A9D921E23CEC00BE4EAE /* WriteCommentViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +168,10 @@
 				35940CA221DFA00000962CC3 /* RankingTableViewCell.xib */,
 				35C757B121E08ED300F187B4 /* AListTableViewCell.swift */,
 				35C757B221E08ED300F187B4 /* AListTableViewCell.xib */,
+				3545A9DB21E259C900BE4EAE /* EmptyTableViewCell.swift */,
+				3545A9DC21E259C900BE4EAE /* EmptyTableViewCell.xib */,
+				3545A9DF21E2636700BE4EAE /* EditTableViewCell.swift */,
+				3545A9E021E2636700BE4EAE /* EditTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,12 +271,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3545A9DE21E259C900BE4EAE /* EmptyTableViewCell.xib in Resources */,
 				35940CA421DFA00000962CC3 /* RankingTableViewCell.xib in Resources */,
 				35C757B421E08ED300F187B4 /* AListTableViewCell.xib in Resources */,
 				351D768321CFAADB000FD835 /* LaunchScreen.storyboard in Resources */,
 				351D768021CFAADB000FD835 /* Assets.xcassets in Resources */,
 				351D767E21CFAAD8000FD835 /* Main.storyboard in Resources */,
 				358B89C621DA38BD00B3DDEC /* QListTableViewCell.xib in Resources */,
+				3545A9E221E2636700BE4EAE /* EditTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +351,7 @@
 				35E2CADC21DB93C60012DBF5 /* WriteView.swift in Sources */,
 				358B89BD21DA31B700B3DDEC /* AView.swift in Sources */,
 				358B89B321DA06CE00B3DDEC /* WriteViewController.swift in Sources */,
+				3545A9E121E2636700BE4EAE /* EditTableViewCell.swift in Sources */,
 				3544796421D91F1000FF7022 /* QViewController.swift in Sources */,
 				35C757B321E08ED300F187B4 /* AListTableViewCell.swift in Sources */,
 				35940C9C21DE17CB00962CC3 /* CommentTableViewCell.swift in Sources */,
@@ -344,6 +362,7 @@
 				351D767921CFAAD8000FD835 /* AppDelegate.swift in Sources */,
 				3544796221D91F0600FF7022 /* HomeViewController.swift in Sources */,
 				35940CA321DFA00000962CC3 /* RankingTableViewCell.swift in Sources */,
+				3545A9DA21E23CEC00BE4EAE /* WriteCommentViewController.swift in Sources */,
 				35940CA021DF56A400962CC3 /* SelectViewController.swift in Sources */,
 				3546EBF021DC7CEB00036EEE /* CoalaModel.swift in Sources */,
 				358B89BB21DA31B000B3DDEC /* QView.swift in Sources */,
@@ -352,6 +371,7 @@
 				3545A9D621E1E09C00BE4EAE /* Toaster.swift in Sources */,
 				35C757B621E0922600F187B4 /* ImageViewController.swift in Sources */,
 				358B89C021DA31D900B3DDEC /* Protocol.swift in Sources */,
+				3545A9DD21E259C900BE4EAE /* EmptyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

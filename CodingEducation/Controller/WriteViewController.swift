@@ -62,15 +62,18 @@ extension WriteViewController: NaviSetting {
         new.descript = descript
         new.createdTime = createTime()
 
+        
         if imageView1.image != nil {
             if let image = imageView1.image {
                 new.image1 = convertImgToData(img: image)
             }
-        }else if imageView2.image != nil {
+        }
+        if imageView2.image != nil {
             if let image = imageView2.image {
                 new.image2 = convertImgToData(img: image)
             }
-        } else if imageView3.image != nil {
+        }
+        if imageView3.image != nil {
             if let image = imageView3.image {
                 new.image3 = convertImgToData(img: image)
             }

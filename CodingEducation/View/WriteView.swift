@@ -21,9 +21,13 @@ extension WriteViewController: UIImagePickerControllerDelegate, UINavigationCont
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
             if imageView1.image == nil {
                 imageView1.image = image
-            } else if imageView1.image != nil {
+            }
+            
+            else if imageView1.image != nil && imageView2.image == nil {
                 imageView2.image = image
-            } else if imageView2.image != nil {
+            }
+            
+            else if imageView1.image != nil && imageView2.image != nil {
                 imageView3.image = image
             }
         }

@@ -93,8 +93,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="countLabel" destination="Yxn-Eb-wXX" id="Ka2-Va-GNQ"/>
                 <outlet property="dateLabel" destination="FBi-ai-aFn" id="e7o-mR-59u"/>
                 <outlet property="myView" destination="rOI-4A-Yrm" id="eav-9S-Pro"/>
+                <outlet property="nameLabel" destination="TjP-uZ-M6c" id="g6z-Rg-fP3"/>
                 <outlet property="titleLabel" destination="s0y-6q-V1z" id="JkP-D9-9X0"/>
                 <outlet property="typeImageView" destination="BRS-HM-IGP" id="GbJ-y5-zwI"/>
             </connections>

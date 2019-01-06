@@ -68,7 +68,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QCell", for: indexPath) as! QListTableViewCell
         cell.titleLabel.text = listArray?[indexPath.row].title
         cell.dateLabel.text = listArray?[indexPath.row].createdTime
-
+        cell.nameLabel.text = "이지윤"
+        cell.countLabel.text = "답변수 0 좋아요 0개"
         return cell
     }
 

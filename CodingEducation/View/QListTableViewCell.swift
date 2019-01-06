@@ -12,6 +12,8 @@ class QListTableViewCell: UITableViewCell {
     
     private var toggle = false
     
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var myView: UIView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var typeImageView: UIImageView!

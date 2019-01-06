@@ -14,6 +14,8 @@ class ImageViewController: UIViewController , UIScrollViewDelegate{
     @IBOutlet weak var scrollView: UIScrollView!
     
     var myImage: UIImage?
+    var my2Image: UIImage?
+    var my3Image: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()

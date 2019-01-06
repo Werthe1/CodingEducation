@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditCell" rowHeight="412" id="Utt-7s-Feu" customClass="EditTableViewCell" customModule="CodingEducation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="412"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Utt-7s-Feu" id="krA-HF-5MT">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="411.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BF7-8A-XuW">
+                        <rect key="frame" x="16" y="16" width="288" height="120"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="답변을 작성해주세요." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vej-qX-S2u">
+                                <rect key="frame" x="8" y="8" width="272" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20784313730000001" green="0.36078431370000003" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="Fpa-Pj-YE2"/>
+                            <constraint firstAttribute="bottom" secondItem="Vej-qX-S2u" secondAttribute="bottom" constant="8" id="GUr-yb-68Y"/>
+                            <constraint firstAttribute="trailing" secondItem="Vej-qX-S2u" secondAttribute="trailing" constant="8" id="Kd5-O6-EWn"/>
+                            <constraint firstItem="Vej-qX-S2u" firstAttribute="top" secondItem="BF7-8A-XuW" secondAttribute="top" constant="8" id="Vmz-L4-Ws8"/>
+                            <constraint firstItem="Vej-qX-S2u" firstAttribute="leading" secondItem="BF7-8A-XuW" secondAttribute="leading" constant="8" id="gAR-bf-LUp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BF7-8A-XuW" firstAttribute="leading" secondItem="krA-HF-5MT" secondAttribute="leading" constant="16" id="FuR-sV-dHc"/>
+                    <constraint firstAttribute="bottom" secondItem="BF7-8A-XuW" secondAttribute="bottom" constant="170" id="Oay-D3-Yot"/>
+                    <constraint firstAttribute="trailing" secondItem="BF7-8A-XuW" secondAttribute="trailing" constant="16" id="XT0-GX-cNd"/>
+                    <constraint firstItem="BF7-8A-XuW" firstAttribute="top" secondItem="krA-HF-5MT" secondAttribute="top" constant="16" id="l36-H1-8Ph"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="myView" destination="BF7-8A-XuW" id="wNq-aG-Hul"/>
+                <outlet property="textView" destination="Vej-qX-S2u" id="CD6-Dw-23H"/>
+            </connections>
+            <point key="canvasLocation" x="113.59999999999999" y="-114.24287856071965"/>
+        </tableViewCell>
+    </objects>
+</document>

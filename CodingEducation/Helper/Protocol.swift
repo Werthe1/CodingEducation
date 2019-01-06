@@ -15,3 +15,7 @@ protocol NaviSetting {
 protocol RankingSelectDelegate {
     func userInfo(name: String)
 }
+
+protocol CommentDelegate {
+    func comment(content: String)
+}
