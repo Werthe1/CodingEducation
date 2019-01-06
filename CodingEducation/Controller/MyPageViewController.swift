@@ -36,12 +36,16 @@ extension MyPageViewController: UITableViewDataSource, UITableViewDelegate {
             switch indexPath.row {
             case 1:
                 cell.menuLabel.text = "나의 랭킹"
+                cell.valueLabel.text = "level: 4"
             case 2:
                 cell.menuLabel.text = "나의 코인"
+                cell.valueLabel.text = "300코인"
             case 3:
                 cell.menuLabel.text = "나의 질문"
+                cell.valueLabel.text = "3개"
             default:
                 cell.menuLabel.text = "나의 답변"
+                cell.valueLabel.text = "1개"
             }
             return cell
         }

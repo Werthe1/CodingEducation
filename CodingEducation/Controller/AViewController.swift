@@ -6,11 +6,14 @@
 //  Copyright © 2018 hyerikim. All rights reserved.
 //
 
-import UIKit
+import RealmSwift
 
 class AViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    var listArray: Results<CoalaModel>?
+    let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +22,12 @@ class AViewController: UIViewController {
         
         defaultNavi()
         defaultView()
-
+        loadList()
     }
 
+    func loadList() {
+        listArray = realm.objects(CoalaModel.self)
+        self.tableView.reloadData()
+    }
+    
 }

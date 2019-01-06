@@ -407,7 +407,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="hSO-Lb-zeh">
-                                    <rect key="frame" x="0.0" y="299" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="281" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
@@ -451,30 +451,40 @@
                                             <outlet property="profileImage" destination="ViD-3x-khD" id="D2T-hl-ljd"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="90" id="CUc-rd-3pi" customClass="MyPageTableViewCell" customModule="CodingEducation" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="209" width="375" height="90"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="72" id="CUc-rd-3pi" customClass="MyPageTableViewCell" customModule="CodingEducation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="209" width="375" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CUc-rd-3pi" id="V9Z-o6-tEn">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의랭킹" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JP-ss-Qz1">
-                                                    <rect key="frame" x="20" y="20" width="335" height="49.5"/>
+                                                    <rect key="frame" x="16" y="16" width="59" height="39.5"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의랭킹" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeR-qy-kvn">
+                                                    <rect key="frame" x="300" y="16" width="59" height="39.5"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="4JP-ss-Qz1" firstAttribute="leading" secondItem="V9Z-o6-tEn" secondAttribute="leading" constant="20" id="0UW-28-IUy"/>
-                                                <constraint firstAttribute="bottom" secondItem="4JP-ss-Qz1" secondAttribute="bottom" constant="20" id="2FD-jx-qnF"/>
-                                                <constraint firstAttribute="trailing" secondItem="4JP-ss-Qz1" secondAttribute="trailing" constant="20" id="4ub-3K-6nj"/>
-                                                <constraint firstItem="4JP-ss-Qz1" firstAttribute="top" secondItem="V9Z-o6-tEn" secondAttribute="top" constant="20" id="eaS-yK-Uyo"/>
+                                                <constraint firstAttribute="trailing" secondItem="YeR-qy-kvn" secondAttribute="trailing" constant="16" id="Ktp-N8-jxJ"/>
+                                                <constraint firstItem="4JP-ss-Qz1" firstAttribute="top" secondItem="V9Z-o6-tEn" secondAttribute="top" constant="16" id="QN6-pP-j9A"/>
+                                                <constraint firstAttribute="bottom" secondItem="4JP-ss-Qz1" secondAttribute="bottom" constant="16" id="TxY-la-u73"/>
+                                                <constraint firstItem="YeR-qy-kvn" firstAttribute="top" secondItem="V9Z-o6-tEn" secondAttribute="top" constant="16" id="UXr-k0-Hxn"/>
+                                                <constraint firstItem="4JP-ss-Qz1" firstAttribute="leading" secondItem="V9Z-o6-tEn" secondAttribute="leading" constant="16" id="gWR-Nc-zAA"/>
+                                                <constraint firstAttribute="bottom" secondItem="YeR-qy-kvn" secondAttribute="bottom" constant="16" id="mup-2y-zJn"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="menuLabel" destination="4JP-ss-Qz1" id="P7R-dj-frz"/>
+                                            <outlet property="valueLabel" destination="YeR-qy-kvn" id="Xsz-Xe-tzN"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

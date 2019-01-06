@@ -10,6 +10,7 @@ import UIKit
 
 class MyPageTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var valueLabel: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var myNameLabel: UILabel!
     @IBOutlet weak var menuLabel: UILabel!

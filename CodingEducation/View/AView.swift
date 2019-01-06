@@ -42,13 +42,12 @@ extension AViewController: UITableViewDelegate,  UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let tableViewWidth = self.tableView.bounds
         
-        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableViewWidth.size.width, height: tableView.sectionHeaderHeight))
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.sectionHeaderHeight))
         
         let label = UILabel()
         label.textColor = UIColor.white
-        
+        label.font = UIFont.systemFont(ofSize: 18)
         switch section {
         case 0:
             label.text = "😇채택된 답변😇"
@@ -58,7 +57,7 @@ extension AViewController: UITableViewDelegate,  UITableViewDataSource {
         label.textAlignment = .center
         label.frame = headerView.frame
         headerView.addSubview(label)
-        headerView.backgroundColor = UIColor.gray
+        headerView.backgroundColor = UIColor.lightGray
         
         return headerView
     }
@@ -66,12 +65,14 @@ extension AViewController: UITableViewDelegate,  UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QCell", for: indexPath) as! QListTableViewCell
         cell.typeImageView.image = UIImage(named: "Answer")
-        cell.titleLabel.text = "iOS는 생명주기가 어떻게 되고 Android는 어떻게 되나요?"
+        cell.titleLabel.text = listArray?[indexPath.row].title
+        cell.dateLabel.text = listArray?[indexPath.row].createdTime
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "Detail") as! DetailViewController
+        vc.getData = listArray?[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
