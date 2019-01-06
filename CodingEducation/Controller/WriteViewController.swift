@@ -19,16 +19,16 @@ class WriteViewController: UIViewController {
     let realm = try! Realm()
     var listArray: Results<CoalaModel>?
 
-    @IBAction func imageTapped(_ sender: Any) {
-        createImagePicker()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         contentTextView.delegate = self
         defaultNavi()
     }
     
+    @IBAction func imageTapped(_ sender: Any) {
+        createImagePicker()
+    }
+
 }
 
 extension WriteViewController: NaviSetting {

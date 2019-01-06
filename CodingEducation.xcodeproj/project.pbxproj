@@ -16,6 +16,7 @@
 		3544796421D91F1000FF7022 /* QViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3544796321D91F1000FF7022 /* QViewController.swift */; };
 		3544796621D91F1500FF7022 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3544796521D91F1500FF7022 /* AViewController.swift */; };
 		3545A9D621E1E09C00BE4EAE /* Toaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545A9D521E1E09C00BE4EAE /* Toaster.swift */; };
+		3545A9D821E1F07800BE4EAE /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545A9D721E1F07800BE4EAE /* PayViewController.swift */; };
 		3546EBF021DC7CEB00036EEE /* CoalaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546EBEF21DC7CEB00036EEE /* CoalaModel.swift */; };
 		358B89B321DA06CE00B3DDEC /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B89B221DA06CE00B3DDEC /* WriteViewController.swift */; };
 		358B89B521DA06DC00B3DDEC /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B89B421DA06DC00B3DDEC /* MyPageViewController.swift */; };
@@ -51,6 +52,7 @@
 		3544796321D91F1000FF7022 /* QViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QViewController.swift; sourceTree = "<group>"; };
 		3544796521D91F1500FF7022 /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
 		3545A9D521E1E09C00BE4EAE /* Toaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toaster.swift; sourceTree = "<group>"; };
+		3545A9D721E1F07800BE4EAE /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 		3546EBEF21DC7CEB00036EEE /* CoalaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoalaModel.swift; sourceTree = "<group>"; };
 		358B89B221DA06CE00B3DDEC /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		358B89B421DA06DC00B3DDEC /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				358B89C121DA36EC00B3DDEC /* DetailViewController.swift */,
 				35940C9F21DF56A400962CC3 /* SelectViewController.swift */,
 				35C757B521E0922600F187B4 /* ImageViewController.swift */,
+				3545A9D721E1F07800BE4EAE /* PayViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				35940CA021DF56A400962CC3 /* SelectViewController.swift in Sources */,
 				3546EBF021DC7CEB00036EEE /* CoalaModel.swift in Sources */,
 				358B89BB21DA31B000B3DDEC /* QView.swift in Sources */,
+				3545A9D821E1F07800BE4EAE /* PayViewController.swift in Sources */,
 				3544796621D91F1500FF7022 /* AViewController.swift in Sources */,
 				3545A9D621E1E09C00BE4EAE /* Toaster.swift in Sources */,
 				35C757B621E0922600F187B4 /* ImageViewController.swift in Sources */,

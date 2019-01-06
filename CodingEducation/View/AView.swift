@@ -45,7 +45,7 @@ extension AViewController: UITableViewDelegate,  UITableViewDataSource {
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.sectionHeaderHeight))
         
         let label = UILabel()
-        label.textColor = UIColor.white
+        label.textColor = UIColor.black
         label.font = UIFont.systemFont(ofSize: 18)
         switch section {
         case 0:
@@ -53,10 +53,9 @@ extension AViewController: UITableViewDelegate,  UITableViewDataSource {
         default:
             label.text = "😊내가 단 답변😊"
         }
-        label.textAlignment = .center
-        label.frame = headerView.frame
+        label.frame = CGRect(x: 10, y: 10, width: headerView.frame.width, height: headerView.frame.height)
         headerView.addSubview(label)
-        headerView.backgroundColor = UIColor.lightGray
+        headerView.backgroundColor = UIColor.white
         
         return headerView
     }
