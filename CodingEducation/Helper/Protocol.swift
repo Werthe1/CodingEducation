@@ -11,3 +11,7 @@ import Foundation
 protocol NaviSetting {
     func defaultNavi()
 }
+
+protocol RankingSelectDelegate {
+    func userInfo(name: String)
+}

@@ -48,6 +48,7 @@ extension WriteViewController: NaviSetting {
     
     @objc func selectClick() {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "select") as! SelectViewController
+        vc.delegate = self
         vc.check = false
         self.navigationController?.pushViewController(vc, animated: true)
     }
@@ -106,6 +107,14 @@ extension WriteViewController: NaviSetting {
         let date = Date()
         let dateString = dateFormatter.string(from: date)
         return dateString
+    }
+    
+}
+
+extension WriteViewController: RankingSelectDelegate {
+    
+    func userInfo(name: String) {
+        
     }
     
 }

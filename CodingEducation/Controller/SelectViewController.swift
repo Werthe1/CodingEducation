@@ -15,6 +15,7 @@ class SelectViewController: UIViewController {
     var ranking = ["김혜리":3,"이지윤":2,"김준용":2,"김만기":1,"박소희":1,"김보미":1,"고은진":1,"이혜민":1,"김혜진":1,"박혜리":1,"정민정":1,"이유나":1,"이태낭":1,"정나현":1,"김혜민":1,"김정훈":1,"윤진한":1,"최예준":1,"윤택한":1,"박봄":1,"박하은":1,"최희준":1]
     var select = [6,4,3,2,2,2,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0]
     var check = true
+    var delegate: RankingSelectDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +54,7 @@ extension SelectViewController: UITableViewDelegate, UITableViewDataSource {
             
             self.present(alert, animated: true, completion: nil)
         } else {
+            delegate?.userInfo(name: ranking.map({$0.key})[indexPath.row])
             self.navigationController?.popViewController(animated: true)
         }
         
